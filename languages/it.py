@@ -188,6 +188,7 @@
 'Ram Cleared': 'Ram Cleared',
 'Recipes': 'Recipes',
 'Record': 'Record',
+'Record Created': 'Record Created',
 'record does not exist': 'il record non esiste',
 'Record ID': 'Record ID',
 'Record id': 'Record id',
