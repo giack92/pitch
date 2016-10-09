@@ -61,6 +61,8 @@ def call():
 from gluon.tools import Crud
 crud = Crud(globals(), db)
 
+@auth.requires_login()
+
 def entry_post():
     """returns a form where the can entry a post"""
     form = crud.create(db.post)
