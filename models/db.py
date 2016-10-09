@@ -113,6 +113,7 @@ auth.settings.reset_password_requires_verification = True
 # Define your tables below (or better in another model file) for example
 #
 # >>> db.define_table('mytable', Field('myfield', 'string'))
+db.define_table('post',Field('contenuto', 'text'),Field('user_id', db.auth_user))
 #
 # Fields can be 'string','text','password','integer','double','boolean'
 #       'date','time','datetime','blob','upload', 'reference TABLENAME'
@@ -129,4 +130,4 @@ auth.settings.reset_password_requires_verification = True
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
-# auth.enable_record_versioning(db)
+auth.enable_record_versioning(db)
